@@ -25,7 +25,7 @@ app.use('/api/website/enquiry',enquiryRouter)
 
 
 
-mongoose.connect(process.env.DbUrl).then(()=>{
+mongoose.connect(process.env.DB_URL).then(()=>{
     console.log("connected succussfully")
     //http://localhost:1020/api/website/enquiry/
     app.listen(process.env.PORT || 2000,()=>{
